@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BIBLOS</title>
+  <link rel="stylesheet" href="store.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="h4" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">📚BIBLOS📚</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categories</a>
+            <ul class="dropdown" id="category-dropdown">
+                <li><a href="#" data-category="Fiction">Fiction</a></li>
+                <li><a href="#" data-category="Non-fiction">Non-fiction</a></li>
+                <li><a href="#" data-category="Science">Science</a></li>
+                <li><a href="#" data-category="Fantasy">Fantasy</a></li>
+                <li><a href="#" data-category="Classics">Classics</a></li>
+              </ul>
+        </li>
+        <li><a href="#">Wishlist ❤️ (<span id="wishlist-count">0</span>)</a></li>
+        <li><a href="#">Cart 🛒 (<span id="cart-count">0</span>)</a></li>
+        <li>
+            <input type="text" id="search" placeholder="Search books..." />
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="book-list" id="book-list"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 📚BIBLOS</p>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title">Title</h2>
+      <ul id="modal-list"></ul>
+    </div>
+  </div>
+
+  <script src="store.js"></script>
+</body>
+</html>
